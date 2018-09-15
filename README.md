@@ -2,21 +2,17 @@
 
 ## Comenzando 🚀
 
-_Aquí se inicia la idea de ayudar a estudiantes de educación media, con el fin de orientarlos mediante herramientas tecnológicas hacia la educación superior.._
-_Puedes clonar nuestro proyecto con el fin de ampliar las características y funcionalidades del mismo ._
+_Aquí se inicia la idea de ayudar a estudiantes de educación media, con el fin de orientarlos mediante herramientas tecnológicas hacia la educación superior._
 
-Conoce el **Deployment** para corroborar como realizar el despliegue correcto del proyecto,
-
-
+<!-- Conoce el **Deployment** para corroborar como realizar el despliegue correcto del proyecto.
+ -->
 ### Pre-requisitos 📋
 
 _Herramientas necesarias para instalar o modificar el código del proyecto_
-
-
 ```
 Da un ejemplo
 ```
-
+<!-- 
 ### Instalación 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
@@ -33,9 +29,9 @@ _Y repite_
 hasta finalizar
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_ -->
 
-## Ejecutando las pruebas ⚙️
+<!-- ## Ejecutando las pruebas ⚙️
 
 _Explica como ejecutar las pruebas automatizadas para este sistema_
 
@@ -54,10 +50,10 @@ _Explica que verifican estas pruebas y por qué_
 ```
 Da un ejemplo
 ```
+ -->
+<!-- ## Deployment 📦
 
-## Deployment 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+_Agrega notas adicionales sobre como hacer deploy_ -->
 
 ## Construido con 🛠️
 
@@ -81,7 +77,7 @@ Cada uno de los integrantes del proyecto, ha realizado aportes significativos co
 
 * **Ricardo** - *Tester* 
 * **Francisco** - *Documentación* 
-* **Francisco** - *Desarrollador* 
+* **Andres** - *Desarrollador* 
 
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
