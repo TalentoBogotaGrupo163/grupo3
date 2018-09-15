@@ -2,14 +2,16 @@
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Aquí se inicia la idea de ayudar a estudiantes de educación media, con el fin de orientarlos mediante herramientas tecnológicas hacia la educación superior.._
+_Puedes clonar nuestro proyecto con el fin de ampliar las características y funcionalidades del mismo ._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Conoce el **Deployment** para corroborar como realizar el despliegue correcto del proyecto,
 
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Herramientas necesarias para instalar o modificar el código del proyecto_
+
 
 ```
 Da un ejemplo
@@ -75,10 +77,12 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+Cada uno de los integrantes del proyecto, ha realizado aportes significativos con el fin de dar inicio, desarrollo e implementación de esta idea, para colaborar al máximo en la educación media de cada estudiante, con el fin de orientarlos hacia la educación superior.
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Ricardo** - *Tester* 
+* **Francisco** - *Documentación* 
+* **Francisco** - *Desarrollador* 
+
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
