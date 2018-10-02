@@ -1,0 +1,7 @@
+{
+  "name": "FrontedIonic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
