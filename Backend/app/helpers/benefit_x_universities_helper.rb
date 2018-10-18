@@ -1,0 +1,2 @@
+module BenefitXUniversitiesHelper
+end

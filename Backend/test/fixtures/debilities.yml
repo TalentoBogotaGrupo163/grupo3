@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_debility: 1
+  name_debility: MyString
+  description_debility: MyString
+
+two:
+  code_debility: 1
+  name_debility: MyString
+  description_debility: MyString

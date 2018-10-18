@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_person: one
+  code_subject: one
+  decription: MyString
+
+two:
+  code_person: two
+  code_subject: two
+  decription: MyString

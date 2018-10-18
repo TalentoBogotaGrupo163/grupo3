@@ -1,0 +1,32 @@
+<%= form_with(model: university_x_city, local: true) do |form| %>
+  <% if university_x_city.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(university_x_city.errors.count, "error") %> prohibited this university_x_city from being saved:</h2>
+
+      <ul>
+      <% university_x_city.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :code_city_id %>
+    <%= form.text_field :code_city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code_university_id %>
+    <%= form.text_field :code_university_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

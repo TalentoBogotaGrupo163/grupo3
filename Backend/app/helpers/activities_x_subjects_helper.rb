@@ -1,0 +1,2 @@
+module ActivitiesXSubjectsHelper
+end

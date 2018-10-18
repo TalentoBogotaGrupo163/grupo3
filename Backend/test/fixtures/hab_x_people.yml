@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_hability: one
+  code_person: one
+  description: MyString
+
+two:
+  code_hability: two
+  code_person: two
+  description: MyString

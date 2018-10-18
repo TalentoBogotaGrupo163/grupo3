@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_program: 1
+  description_program: MyString
+  name_program: MyString
+  url_program: MyString
+
+two:
+  code_program: 1
+  description_program: MyString
+  name_program: MyString
+  url_program: MyString

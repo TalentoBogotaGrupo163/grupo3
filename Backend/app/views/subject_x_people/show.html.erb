@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code person:</strong>
+  <%= @subject_x_person.code_person %>
+</p>
+
+<p>
+  <strong>Code subject:</strong>
+  <%= @subject_x_person.code_subject %>
+</p>
+
+<p>
+  <strong>Decription:</strong>
+  <%= @subject_x_person.decription %>
+</p>
+
+<%= link_to 'Edit', edit_subject_x_person_path(@subject_x_person) %> |
+<%= link_to 'Back', subject_x_people_path %>
