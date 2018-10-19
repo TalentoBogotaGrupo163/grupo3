@@ -8,7 +8,6 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CiudadesComponent } from './ciudades/ciudades.component';
 import { EstudiantesComponent } from './estudiantes/estudiantes.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { DebilidadesComponent } from './debilidades/debilidades.component';
@@ -24,10 +23,34 @@ import { ActividadesComponent } from './actividades/actividades.component';
 import { AsignaturasComponent } from './asignaturas/asignaturas.component';
 import { NotasComponent } from './notas/notas.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
 @NgModule({
-  declarations: [AppComponent, CiudadesComponent, EstudiantesComponent, HabilidadesComponent, DebilidadesComponent, DebilidadesXPersonaComponent, HabilidadesXPersonaComponent, UniversidadesComponent, ProgramasComponent, BeneficiosComponent, CursosComponent, EntidadesComponent, ColegioComponent, ActividadesComponent, AsignaturasComponent, NotasComponent],
+  declarations: [
+    AppComponent,
+    EstudiantesComponent,
+    HabilidadesComponent,
+    DebilidadesComponent,
+    DebilidadesXPersonaComponent,
+    HabilidadesXPersonaComponent,
+    UniversidadesComponent,
+    ProgramasComponent,
+    BeneficiosComponent,
+    CursosComponent,
+    EntidadesComponent,
+    ColegioComponent,
+    ActividadesComponent,
+    AsignaturasComponent,
+    NotasComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    HttpModule,
+    HttpClientModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -35,4 +58,4 @@ import { NotasComponent } from './notas/notas.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
