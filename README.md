@@ -79,8 +79,6 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones
 
 Cada uno de los integrantes del proyecto, ha realizado aportes significativos con el fin de dar inicio, desarrollo e implementación de esta idea, para colaborar al máximo en la educación media de cada estudiante, con el fin de orientarlos hacia la educación superior.
 
-* **Ricardo** - *Tester* 
-* **Francisco** - *Documentación* 
 * **Andres** - *Desarrollador* 
 
 <!-- 

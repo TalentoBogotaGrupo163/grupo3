@@ -1,2 +1,0 @@
-class Debility < ApplicationRecord
-end
