@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Course X Entities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entity</th>
+      <th>Courses</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @course_x_entities.each do |course_x_entity| %>
+      <tr>
+        <td><%= course_x_entity.Entity %></td>
+        <td><%= course_x_entity.Courses %></td>
+        <td><%= course_x_entity.description %></td>
+        <td><%= link_to 'Show', course_x_entity %></td>
+        <td><%= link_to 'Edit', edit_course_x_entity_path(course_x_entity) %></td>
+        <td><%= link_to 'Destroy', course_x_entity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course X Entity', new_course_x_entity_path %>

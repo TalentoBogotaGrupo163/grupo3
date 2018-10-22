@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Entity: one
+  Courses: one
+  description: MyString
+
+two:
+  Entity: two
+  Courses: two
+  description: MyString

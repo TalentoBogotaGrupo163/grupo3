@@ -1,0 +1,32 @@
+<%= form_with(model: notes_x_subject, local: true) do |form| %>
+  <% if notes_x_subject.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(notes_x_subject.errors.count, "error") %> prohibited this notes_x_subject from being saved:</h2>
+
+      <ul>
+      <% notes_x_subject.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Subjects_id %>
+    <%= form.text_field :Subjects_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Notes_id %>
+    <%= form.text_field :Notes_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

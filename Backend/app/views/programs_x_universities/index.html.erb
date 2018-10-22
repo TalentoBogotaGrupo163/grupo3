@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Programs X Universities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Programs</th>
+      <th>University</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @programs_x_universities.each do |programs_x_university| %>
+      <tr>
+        <td><%= programs_x_university.Programs %></td>
+        <td><%= programs_x_university.University %></td>
+        <td><%= programs_x_university.description %></td>
+        <td><%= link_to 'Show', programs_x_university %></td>
+        <td><%= link_to 'Edit', edit_programs_x_university_path(programs_x_university) %></td>
+        <td><%= link_to 'Destroy', programs_x_university, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Programs X University', new_programs_x_university_path %>
