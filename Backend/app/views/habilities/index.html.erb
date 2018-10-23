@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Habilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code hability</th>
+      <th>Name hability</th>
+      <th>Description hability</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @habilities.each do |hability| %>
+      <tr>
+        <td><%= hability.code_hability %></td>
+        <td><%= hability.name_hability %></td>
+        <td><%= hability.description_hability %></td>
+        <td><%= link_to 'Show', hability %></td>
+        <td><%= link_to 'Edit', edit_hability_path(hability) %></td>
+        <td><%= link_to 'Destroy', hability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hability', new_hability_path %>

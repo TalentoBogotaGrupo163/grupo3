@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @activity_x_subject.subject %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @activity_x_subject.activity %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @activity_x_subject.description %>
+</p>
+
+<%= link_to 'Edit', edit_activity_x_subject_path(@activity_x_subject) %> |
+<%= link_to 'Back', activity_x_subjects_path %>

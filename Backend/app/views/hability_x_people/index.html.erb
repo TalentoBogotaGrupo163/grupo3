@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hability X People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hability</th>
+      <th>People</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hability_x_people.each do |hability_x_person| %>
+      <tr>
+        <td><%= hability_x_person.hability %></td>
+        <td><%= hability_x_person.people %></td>
+        <td><%= hability_x_person.description %></td>
+        <td><%= link_to 'Show', hability_x_person %></td>
+        <td><%= link_to 'Edit', edit_hability_x_person_path(hability_x_person) %></td>
+        <td><%= link_to 'Destroy', hability_x_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hability X Person', new_hability_x_person_path %>

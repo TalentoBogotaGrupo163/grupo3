@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code_note: 1
+  valuenote_note: MyString
+  description_note: MyString
+
+two:
+  code_note: 1
+  valuenote_note: MyString
+  description_note: MyString

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code debility:</strong>
+  <%= @debility.code_debility %>
+</p>
+
+<p>
+  <strong>Name debility:</strong>
+  <%= @debility.name_debility %>
+</p>
+
+<p>
+  <strong>Description debility:</strong>
+  <%= @debility.description_debility %>
+</p>
+
+<%= link_to 'Edit', edit_debility_path(@debility) %> |
+<%= link_to 'Back', debilities_path %>

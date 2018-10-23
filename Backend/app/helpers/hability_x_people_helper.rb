@@ -1,0 +1,2 @@
+module HabilityXPeopleHelper
+end

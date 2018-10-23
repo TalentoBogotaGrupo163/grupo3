@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Note X Subjects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Note</th>
+      <th>Subject</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @note_x_subjects.each do |note_x_subject| %>
+      <tr>
+        <td><%= note_x_subject.note %></td>
+        <td><%= note_x_subject.subject %></td>
+        <td><%= note_x_subject.description %></td>
+        <td><%= link_to 'Show', note_x_subject %></td>
+        <td><%= link_to 'Edit', edit_note_x_subject_path(note_x_subject) %></td>
+        <td><%= link_to 'Destroy', note_x_subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Note X Subject', new_note_x_subject_path %>

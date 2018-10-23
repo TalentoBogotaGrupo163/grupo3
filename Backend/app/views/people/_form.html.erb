@@ -1,0 +1,67 @@
+<%= form_with(model: person, local: true) do |form| %>
+  <% if person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :code_person %>
+    <%= form.number_field :code_person %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_person %>
+    <%= form.text_field :name_person %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age_person %>
+    <%= form.date_select :age_person %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_person %>
+    <%= form.text_field :address_person %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email_person %>
+    <%= form.text_field :email_person %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender_id %>
+    <%= form.text_field :gender_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :school_id %>
+    <%= form.text_field :school_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_users_id %>
+    <%= form.text_field :type_users_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_person %>
+    <%= form.text_field :password_person %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

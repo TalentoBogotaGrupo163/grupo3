@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hability:</strong>
+  <%= @hability_x_person.hability %>
+</p>
+
+<p>
+  <strong>People:</strong>
+  <%= @hability_x_person.people %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hability_x_person.description %>
+</p>
+
+<%= link_to 'Edit', edit_hability_x_person_path(@hability_x_person) %> |
+<%= link_to 'Back', hability_x_people_path %>
