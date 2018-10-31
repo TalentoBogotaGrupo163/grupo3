@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_course: MyString
+  description_benefit: MyString
+  url_course: MyString
+
+two:
+  name_course: MyString
+  description_benefit: MyString
+  url_course: MyString

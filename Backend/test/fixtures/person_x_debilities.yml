@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  debility: one
+  person: one
+  description: MyString
+
+two:
+  debility: two
+  person: two
+  description: MyString

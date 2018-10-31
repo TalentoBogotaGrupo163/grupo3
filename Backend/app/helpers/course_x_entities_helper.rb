@@ -1,0 +1,2 @@
+module CourseXEntitiesHelper
+end

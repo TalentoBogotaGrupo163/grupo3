@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_activity: MyString
+  description_activity: MyString
+
+two:
+  name_activity: MyString
+  description_activity: MyString

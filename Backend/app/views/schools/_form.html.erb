@@ -1,0 +1,57 @@
+<%= form_with(model: school, local: true) do |form| %>
+  <% if school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+      <% school.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :address_school %>
+    <%= form.text_field :address_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email_school %>
+    <%= form.text_field :email_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_school %>
+    <%= form.text_field :name_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description_school %>
+    <%= form.text_field :description_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_school %>
+    <%= form.text_field :phone_school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_person_id %>
+    <%= form.text_field :type_person_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_school %>
+    <%= form.text_field :password_school %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

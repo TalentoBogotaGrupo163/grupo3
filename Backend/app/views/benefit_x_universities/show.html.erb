@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Universities:</strong>
+  <%= @benefit_x_university.universities %>
+</p>
+
+<p>
+  <strong>Benefit:</strong>
+  <%= @benefit_x_university.benefit %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @benefit_x_university.description %>
+</p>
+
+<%= link_to 'Edit', edit_benefit_x_university_path(@benefit_x_university) %> |
+<%= link_to 'Back', benefit_x_universities_path %>

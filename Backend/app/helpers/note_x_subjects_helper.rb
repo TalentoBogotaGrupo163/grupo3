@@ -1,0 +1,2 @@
+module NoteXSubjectsHelper
+end

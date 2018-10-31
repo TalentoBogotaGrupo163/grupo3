@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  universities: one
+  benefit: one
+  description: MyString
+
+two:
+  universities: two
+  benefit: two
+  description: MyString

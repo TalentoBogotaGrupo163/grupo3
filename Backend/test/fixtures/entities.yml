@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_entity: MyString
+  address_entity: MyString
+  description_entity: MyString
+
+two:
+  name_entity: MyString
+  address_entity: MyString
+  description_entity: MyString

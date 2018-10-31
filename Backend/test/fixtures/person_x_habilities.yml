@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hability: one
+  person: one
+  description: MyString
+
+two:
+  hability: two
+  person: two
+  description: MyString
