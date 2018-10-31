@@ -17,7 +17,7 @@ class GendersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create gender" do
     assert_difference('Gender.count') do
-      post genders_url, params: { gender: { code_gender: @gender.code_gender, name_gender: @gender.name_gender } }
+      post genders_url, params: { gender: { name_gender: @gender.name_gender } }
     end
 
     assert_redirected_to gender_url(Gender.last)
@@ -34,7 +34,7 @@ class GendersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update gender" do
-    patch gender_url(@gender), params: { gender: { code_gender: @gender.code_gender, name_gender: @gender.name_gender } }
+    patch gender_url(@gender), params: { gender: { name_gender: @gender.name_gender } }
     assert_redirected_to gender_url(@gender)
   end
 

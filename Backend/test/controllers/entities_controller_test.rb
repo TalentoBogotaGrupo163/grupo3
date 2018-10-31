@@ -17,7 +17,7 @@ class EntitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create entity" do
     assert_difference('Entity.count') do
-      post entities_url, params: { entity: { address_entity: @entity.address_entity, code_entity: @entity.code_entity, description_entity: @entity.description_entity, name_entity: @entity.name_entity } }
+      post entities_url, params: { entity: { address_entity: @entity.address_entity, description_entity: @entity.description_entity, name_entity: @entity.name_entity } }
     end
 
     assert_redirected_to entity_url(Entity.last)
@@ -34,7 +34,7 @@ class EntitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update entity" do
-    patch entity_url(@entity), params: { entity: { address_entity: @entity.address_entity, code_entity: @entity.code_entity, description_entity: @entity.description_entity, name_entity: @entity.name_entity } }
+    patch entity_url(@entity), params: { entity: { address_entity: @entity.address_entity, description_entity: @entity.description_entity, name_entity: @entity.name_entity } }
     assert_redirected_to entity_url(@entity)
   end
 

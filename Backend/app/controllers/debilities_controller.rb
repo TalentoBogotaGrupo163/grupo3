@@ -69,6 +69,6 @@ class DebilitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def debility_params
-      params.require(:debility).permit(:code_debility, :name_debility, :description_debility)
+      params.require(:debility).permit(:name_debility, :description_debility)
     end
 end

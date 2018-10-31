@@ -15,7 +15,6 @@ class EntitiesTest < ApplicationSystemTestCase
     click_on "New Entity"
 
     fill_in "Address Entity", with: @entity.address_entity
-    fill_in "Code Entity", with: @entity.code_entity
     fill_in "Description Entity", with: @entity.description_entity
     fill_in "Name Entity", with: @entity.name_entity
     click_on "Create Entity"
@@ -29,7 +28,6 @@ class EntitiesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Address Entity", with: @entity.address_entity
-    fill_in "Code Entity", with: @entity.code_entity
     fill_in "Description Entity", with: @entity.description_entity
     fill_in "Name Entity", with: @entity.name_entity
     click_on "Update Entity"

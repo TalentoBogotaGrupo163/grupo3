@@ -17,7 +17,7 @@ class DebilitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create debility" do
     assert_difference('Debility.count') do
-      post debilities_url, params: { debility: { code_debility: @debility.code_debility, description_debility: @debility.description_debility, name_debility: @debility.name_debility } }
+      post debilities_url, params: { debility: { description_debility: @debility.description_debility, name_debility: @debility.name_debility } }
     end
 
     assert_redirected_to debility_url(Debility.last)
@@ -34,7 +34,7 @@ class DebilitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update debility" do
-    patch debility_url(@debility), params: { debility: { code_debility: @debility.code_debility, description_debility: @debility.description_debility, name_debility: @debility.name_debility } }
+    patch debility_url(@debility), params: { debility: { description_debility: @debility.description_debility, name_debility: @debility.name_debility } }
     assert_redirected_to debility_url(@debility)
   end
 

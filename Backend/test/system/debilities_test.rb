@@ -14,7 +14,6 @@ class DebilitiesTest < ApplicationSystemTestCase
     visit debilities_url
     click_on "New Debility"
 
-    fill_in "Code Debility", with: @debility.code_debility
     fill_in "Description Debility", with: @debility.description_debility
     fill_in "Name Debility", with: @debility.name_debility
     click_on "Create Debility"
@@ -27,7 +26,6 @@ class DebilitiesTest < ApplicationSystemTestCase
     visit debilities_url
     click_on "Edit", match: :first
 
-    fill_in "Code Debility", with: @debility.code_debility
     fill_in "Description Debility", with: @debility.description_debility
     fill_in "Name Debility", with: @debility.name_debility
     click_on "Update Debility"

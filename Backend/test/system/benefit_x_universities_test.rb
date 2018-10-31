@@ -16,7 +16,7 @@ class BenefitXUniversitiesTest < ApplicationSystemTestCase
 
     fill_in "Benefit", with: @benefit_x_university.benefit_id
     fill_in "Description", with: @benefit_x_university.description
-    fill_in "University", with: @benefit_x_university.university_id
+    fill_in "Universities", with: @benefit_x_university.universities_id
     click_on "Create Benefit x university"
 
     assert_text "Benefit x university was successfully created"
@@ -29,7 +29,7 @@ class BenefitXUniversitiesTest < ApplicationSystemTestCase
 
     fill_in "Benefit", with: @benefit_x_university.benefit_id
     fill_in "Description", with: @benefit_x_university.description
-    fill_in "University", with: @benefit_x_university.university_id
+    fill_in "Universities", with: @benefit_x_university.universities_id
     click_on "Update Benefit x university"
 
     assert_text "Benefit x university was successfully updated"

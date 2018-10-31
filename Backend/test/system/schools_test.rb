@@ -16,12 +16,12 @@ class SchoolsTest < ApplicationSystemTestCase
 
     fill_in "Address School", with: @school.address_school
     fill_in "City", with: @school.city_id
-    fill_in "Code School", with: @school.code_school
+    fill_in "Description School", with: @school.description_school
     fill_in "Email School", with: @school.email_school
     fill_in "Name School", with: @school.name_school
     fill_in "Password School", with: @school.password_school
     fill_in "Phone School", with: @school.phone_school
-    fill_in "Typeuser", with: @school.typeuser_id
+    fill_in "Type Person", with: @school.type_person_id
     click_on "Create School"
 
     assert_text "School was successfully created"
@@ -34,12 +34,12 @@ class SchoolsTest < ApplicationSystemTestCase
 
     fill_in "Address School", with: @school.address_school
     fill_in "City", with: @school.city_id
-    fill_in "Code School", with: @school.code_school
+    fill_in "Description School", with: @school.description_school
     fill_in "Email School", with: @school.email_school
     fill_in "Name School", with: @school.name_school
     fill_in "Password School", with: @school.password_school
     fill_in "Phone School", with: @school.phone_school
-    fill_in "Typeuser", with: @school.typeuser_id
+    fill_in "Type Person", with: @school.type_person_id
     click_on "Update School"
 
     assert_text "School was successfully updated"

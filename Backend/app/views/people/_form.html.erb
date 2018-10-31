@@ -12,28 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :code_person %>
-    <%= form.number_field :code_person %>
+    <%= form.label :birthdate_people %>
+    <%= form.date_select :birthdate_people %>
   </div>
 
   <div class="field">
-    <%= form.label :name_person %>
-    <%= form.text_field :name_person %>
+    <%= form.label :address_people %>
+    <%= form.text_field :address_people %>
   </div>
 
   <div class="field">
-    <%= form.label :age_person %>
-    <%= form.date_select :age_person %>
-  </div>
-
-  <div class="field">
-    <%= form.label :address_person %>
-    <%= form.text_field :address_person %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email_person %>
-    <%= form.text_field :email_person %>
+    <%= form.label :email_people %>
+    <%= form.text_field :email_people %>
   </div>
 
   <div class="field">
@@ -42,8 +32,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :city_id %>
-    <%= form.text_field :city_id %>
+    <%= form.label :name_people %>
+    <%= form.text_field :name_people %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname_people %>
+    <%= form.text_field :lastname_people %>
   </div>
 
   <div class="field">
@@ -52,13 +47,23 @@
   </div>
 
   <div class="field">
-    <%= form.label :type_users_id %>
-    <%= form.text_field :type_users_id %>
+    <%= form.label :phone_people %>
+    <%= form.text_field :phone_people %>
   </div>
 
   <div class="field">
-    <%= form.label :password_person %>
-    <%= form.text_field :password_person %>
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_person_id %>
+    <%= form.text_field :type_person_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_people %>
+    <%= form.text_field :password_people %>
   </div>
 
   <div class="actions">

@@ -17,7 +17,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
 
   test "should create person" do
     assert_difference('Person.count') do
-      post people_url, params: { person: { address_person: @person.address_person, age_person: @person.age_person, city_id: @person.city_id, code_person: @person.code_person, email_person: @person.email_person, gender_id: @person.gender_id, name_person: @person.name_person, password_person: @person.password_person, school_id: @person.school_id, type_users_id: @person.type_users_id } }
+      post people_url, params: { person: { address_people: @person.address_people, birthdate_people: @person.birthdate_people, city_id: @person.city_id, email_people: @person.email_people, gender_id: @person.gender_id, lastname_people: @person.lastname_people, name_people: @person.name_people, password_people: @person.password_people, phone_people: @person.phone_people, school_id: @person.school_id, type_person_id: @person.type_person_id } }
     end
 
     assert_redirected_to person_url(Person.last)
@@ -34,7 +34,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update person" do
-    patch person_url(@person), params: { person: { address_person: @person.address_person, age_person: @person.age_person, city_id: @person.city_id, code_person: @person.code_person, email_person: @person.email_person, gender_id: @person.gender_id, name_person: @person.name_person, password_person: @person.password_person, school_id: @person.school_id, type_users_id: @person.type_users_id } }
+    patch person_url(@person), params: { person: { address_people: @person.address_people, birthdate_people: @person.birthdate_people, city_id: @person.city_id, email_people: @person.email_people, gender_id: @person.gender_id, lastname_people: @person.lastname_people, name_people: @person.name_people, password_people: @person.password_people, phone_people: @person.phone_people, school_id: @person.school_id, type_person_id: @person.type_person_id } }
     assert_redirected_to person_url(@person)
   end
 

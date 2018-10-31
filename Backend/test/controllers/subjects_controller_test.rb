@@ -17,7 +17,7 @@ class SubjectsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create subject" do
     assert_difference('Subject.count') do
-      post subjects_url, params: { subject: { code_subject: @subject.code_subject, description_subject: @subject.description_subject, name_subject: @subject.name_subject } }
+      post subjects_url, params: { subject: { description_subject: @subject.description_subject, name_subject: @subject.name_subject } }
     end
 
     assert_redirected_to subject_url(Subject.last)
@@ -34,7 +34,7 @@ class SubjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update subject" do
-    patch subject_url(@subject), params: { subject: { code_subject: @subject.code_subject, description_subject: @subject.description_subject, name_subject: @subject.name_subject } }
+    patch subject_url(@subject), params: { subject: { description_subject: @subject.description_subject, name_subject: @subject.name_subject } }
     assert_redirected_to subject_url(@subject)
   end
 

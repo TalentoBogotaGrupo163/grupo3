@@ -14,7 +14,6 @@ class SubjectsTest < ApplicationSystemTestCase
     visit subjects_url
     click_on "New Subject"
 
-    fill_in "Code Subject", with: @subject.code_subject
     fill_in "Description Subject", with: @subject.description_subject
     fill_in "Name Subject", with: @subject.name_subject
     click_on "Create Subject"
@@ -27,7 +26,6 @@ class SubjectsTest < ApplicationSystemTestCase
     visit subjects_url
     click_on "Edit", match: :first
 
-    fill_in "Code Subject", with: @subject.code_subject
     fill_in "Description Subject", with: @subject.description_subject
     fill_in "Name Subject", with: @subject.name_subject
     click_on "Update Subject"

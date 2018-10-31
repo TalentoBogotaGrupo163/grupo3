@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  note: one
   subject: one
+  note: one
   description: MyString
 
 two:
-  note: two
   subject: two
+  note: two
   description: MyString

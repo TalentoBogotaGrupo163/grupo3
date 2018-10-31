@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>University</th>
+      <th>Universities</th>
       <th>Benefit</th>
       <th>Description</th>
       <th colspan="3"></th>
@@ -15,7 +15,7 @@
   <tbody>
     <% @benefit_x_universities.each do |benefit_x_university| %>
       <tr>
-        <td><%= benefit_x_university.university %></td>
+        <td><%= benefit_x_university.universities %></td>
         <td><%= benefit_x_university.benefit %></td>
         <td><%= benefit_x_university.description %></td>
         <td><%= link_to 'Show', benefit_x_university %></td>

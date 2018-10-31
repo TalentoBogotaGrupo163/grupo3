@@ -17,7 +17,7 @@ class BenefitsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create benefit" do
     assert_difference('Benefit.count') do
-      post benefits_url, params: { benefit: { code_benefit: @benefit.code_benefit, description_benefit: @benefit.description_benefit, name_benefit: @benefit.name_benefit } }
+      post benefits_url, params: { benefit: { description_benefit: @benefit.description_benefit, name_benefit: @benefit.name_benefit } }
     end
 
     assert_redirected_to benefit_url(Benefit.last)
@@ -34,7 +34,7 @@ class BenefitsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update benefit" do
-    patch benefit_url(@benefit), params: { benefit: { code_benefit: @benefit.code_benefit, description_benefit: @benefit.description_benefit, name_benefit: @benefit.name_benefit } }
+    patch benefit_url(@benefit), params: { benefit: { description_benefit: @benefit.description_benefit, name_benefit: @benefit.name_benefit } }
     assert_redirected_to benefit_url(@benefit)
   end
 

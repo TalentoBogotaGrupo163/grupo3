@@ -17,7 +17,7 @@ class HabilitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create hability" do
     assert_difference('Hability.count') do
-      post habilities_url, params: { hability: { code_hability: @hability.code_hability, description_hability: @hability.description_hability, name_hability: @hability.name_hability } }
+      post habilities_url, params: { hability: { description_hability: @hability.description_hability, name_hability: @hability.name_hability } }
     end
 
     assert_redirected_to hability_url(Hability.last)
@@ -34,7 +34,7 @@ class HabilitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update hability" do
-    patch hability_url(@hability), params: { hability: { code_hability: @hability.code_hability, description_hability: @hability.description_hability, name_hability: @hability.name_hability } }
+    patch hability_url(@hability), params: { hability: { description_hability: @hability.description_hability, name_hability: @hability.name_hability } }
     assert_redirected_to hability_url(@hability)
   end
 

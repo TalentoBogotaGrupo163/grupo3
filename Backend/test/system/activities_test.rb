@@ -14,7 +14,6 @@ class ActivitiesTest < ApplicationSystemTestCase
     visit activities_url
     click_on "New Activity"
 
-    fill_in "Code Activity", with: @activity.code_activity
     fill_in "Description Activity", with: @activity.description_activity
     fill_in "Name Activity", with: @activity.name_activity
     click_on "Create Activity"
@@ -27,7 +26,6 @@ class ActivitiesTest < ApplicationSystemTestCase
     visit activities_url
     click_on "Edit", match: :first
 
-    fill_in "Code Activity", with: @activity.code_activity
     fill_in "Description Activity", with: @activity.description_activity
     fill_in "Name Activity", with: @activity.name_activity
     click_on "Update Activity"

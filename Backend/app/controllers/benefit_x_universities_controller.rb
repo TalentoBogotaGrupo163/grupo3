@@ -69,6 +69,6 @@ class BenefitXUniversitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def benefit_x_university_params
-      params.require(:benefit_x_university).permit(:university_id, :benefit_id, :description)
+      params.require(:benefit_x_university).permit(:universities_id, :benefit_id, :description)
     end
 end

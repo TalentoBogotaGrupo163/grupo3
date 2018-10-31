@@ -17,7 +17,7 @@ class BenefitXUniversitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create benefit_x_university" do
     assert_difference('BenefitXUniversity.count') do
-      post benefit_x_universities_url, params: { benefit_x_university: { benefit_id: @benefit_x_university.benefit_id, description: @benefit_x_university.description, university_id: @benefit_x_university.university_id } }
+      post benefit_x_universities_url, params: { benefit_x_university: { benefit_id: @benefit_x_university.benefit_id, description: @benefit_x_university.description, universities_id: @benefit_x_university.universities_id } }
     end
 
     assert_redirected_to benefit_x_university_url(BenefitXUniversity.last)
@@ -34,7 +34,7 @@ class BenefitXUniversitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update benefit_x_university" do
-    patch benefit_x_university_url(@benefit_x_university), params: { benefit_x_university: { benefit_id: @benefit_x_university.benefit_id, description: @benefit_x_university.description, university_id: @benefit_x_university.university_id } }
+    patch benefit_x_university_url(@benefit_x_university), params: { benefit_x_university: { benefit_id: @benefit_x_university.benefit_id, description: @benefit_x_university.description, universities_id: @benefit_x_university.universities_id } }
     assert_redirected_to benefit_x_university_url(@benefit_x_university)
   end
 

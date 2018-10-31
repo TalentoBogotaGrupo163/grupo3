@@ -69,6 +69,6 @@ class ProgramXUniversitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def program_x_university_params
-      params.require(:program_x_university).permit(:program_id, :university_id, :description)
+      params.require(:program_x_university).permit(:universities_id, :program_id, :description)
     end
 end

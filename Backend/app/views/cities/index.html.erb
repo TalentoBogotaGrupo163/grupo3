@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Code city</th>
       <th>Name city</th>
       <th colspan="3"></th>
     </tr>
@@ -14,7 +13,6 @@
   <tbody>
     <% @cities.each do |city| %>
       <tr>
-        <td><%= city.code_city %></td>
         <td><%= city.name_city %></td>
         <td><%= link_to 'Show', city %></td>
         <td><%= link_to 'Edit', edit_city_path(city) %></td>

@@ -1,22 +1,21 @@
 Rails.application.routes.draw do
-  resources :subject_x_people
-  resources :hability_x_people
-  resources :debility_x_people
+  resources :person_x_habilities
+  resources :person_x_debilities
   resources :people
-  resources :activity_x_subjects
   resources :note_x_subjects
   resources :notes
+  resources :activity_x_subjects
   resources :subjects
   resources :activities
   resources :schools
-  resources :type_users
+  resources :type_people
   resources :course_x_entities
   resources :entities
   resources :courses
-  resources :university_x_cities
+  resources :city_x_universities
   resources :cities
-  resources :benefit_x_universities
   resources :program_x_universities
+  resources :benefit_x_universities
   resources :universities
   resources :benefits
   resources :programs

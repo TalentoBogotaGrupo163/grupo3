@@ -14,7 +14,6 @@ class HabilitiesTest < ApplicationSystemTestCase
     visit habilities_url
     click_on "New Hability"
 
-    fill_in "Code Hability", with: @hability.code_hability
     fill_in "Description Hability", with: @hability.description_hability
     fill_in "Name Hability", with: @hability.name_hability
     click_on "Create Hability"
@@ -27,7 +26,6 @@ class HabilitiesTest < ApplicationSystemTestCase
     visit habilities_url
     click_on "Edit", match: :first
 
-    fill_in "Code Hability", with: @hability.code_hability
     fill_in "Description Hability", with: @hability.description_hability
     fill_in "Name Hability", with: @hability.name_hability
     click_on "Update Hability"

@@ -14,8 +14,7 @@ class CoursesTest < ApplicationSystemTestCase
     visit courses_url
     click_on "New Course"
 
-    fill_in "Code Course", with: @course.code_course
-    fill_in "Description Course", with: @course.description_course
+    fill_in "Description Benefit", with: @course.description_benefit
     fill_in "Name Course", with: @course.name_course
     fill_in "Url Course", with: @course.url_course
     click_on "Create Course"
@@ -28,8 +27,7 @@ class CoursesTest < ApplicationSystemTestCase
     visit courses_url
     click_on "Edit", match: :first
 
-    fill_in "Code Course", with: @course.code_course
-    fill_in "Description Course", with: @course.description_course
+    fill_in "Description Benefit", with: @course.description_benefit
     fill_in "Name Course", with: @course.name_course
     fill_in "Url Course", with: @course.url_course
     click_on "Update Course"

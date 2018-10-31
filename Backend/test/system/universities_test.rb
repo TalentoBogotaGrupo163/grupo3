@@ -15,7 +15,6 @@ class UniversitiesTest < ApplicationSystemTestCase
     click_on "New University"
 
     fill_in "Address University", with: @university.address_university
-    fill_in "Code University", with: @university.code_university
     fill_in "Description University", with: @university.description_university
     fill_in "Email University", with: @university.email_university
     fill_in "Name University", with: @university.name_university
@@ -30,7 +29,6 @@ class UniversitiesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Address University", with: @university.address_university
-    fill_in "Code University", with: @university.code_university
     fill_in "Description University", with: @university.description_university
     fill_in "Email University", with: @university.email_university
     fill_in "Name University", with: @university.name_university

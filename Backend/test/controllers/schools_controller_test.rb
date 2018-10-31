@@ -17,7 +17,7 @@ class SchoolsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create school" do
     assert_difference('School.count') do
-      post schools_url, params: { school: { address_school: @school.address_school, city_id: @school.city_id, code_school: @school.code_school, email_school: @school.email_school, name_school: @school.name_school, password_school: @school.password_school, phone_school: @school.phone_school, typeuser_id: @school.typeuser_id } }
+      post schools_url, params: { school: { address_school: @school.address_school, city_id: @school.city_id, description_school: @school.description_school, email_school: @school.email_school, name_school: @school.name_school, password_school: @school.password_school, phone_school: @school.phone_school, type_person_id: @school.type_person_id } }
     end
 
     assert_redirected_to school_url(School.last)
@@ -34,7 +34,7 @@ class SchoolsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update school" do
-    patch school_url(@school), params: { school: { address_school: @school.address_school, city_id: @school.city_id, code_school: @school.code_school, email_school: @school.email_school, name_school: @school.name_school, password_school: @school.password_school, phone_school: @school.phone_school, typeuser_id: @school.typeuser_id } }
+    patch school_url(@school), params: { school: { address_school: @school.address_school, city_id: @school.city_id, description_school: @school.description_school, email_school: @school.email_school, name_school: @school.name_school, password_school: @school.password_school, phone_school: @school.phone_school, type_person_id: @school.type_person_id } }
     assert_redirected_to school_url(@school)
   end
 

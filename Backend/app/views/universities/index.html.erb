@@ -5,10 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>Code university</th>
-      <th>Name university</th>
       <th>Address university</th>
       <th>Email university</th>
+      <th>Name university</th>
       <th>Description university</th>
       <th colspan="3"></th>
     </tr>
@@ -17,10 +16,9 @@
   <tbody>
     <% @universities.each do |university| %>
       <tr>
-        <td><%= university.code_university %></td>
-        <td><%= university.name_university %></td>
         <td><%= university.address_university %></td>
         <td><%= university.email_university %></td>
+        <td><%= university.name_university %></td>
         <td><%= university.description_university %></td>
         <td><%= link_to 'Show', university %></td>
         <td><%= link_to 'Edit', edit_university_path(university) %></td>

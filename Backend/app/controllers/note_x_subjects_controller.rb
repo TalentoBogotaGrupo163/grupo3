@@ -69,6 +69,6 @@ class NoteXSubjectsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_x_subject_params
-      params.require(:note_x_subject).permit(:note_id, :subject_id, :description)
+      params.require(:note_x_subject).permit(:subject_id, :note_id, :description)
     end
 end

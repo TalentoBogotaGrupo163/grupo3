@@ -1,25 +1,27 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  code_person: 1
-  name_person: MyString
-  age_person: 2018-10-22
-  address_person: MyString
-  email_person: MyString
+  birthdate_people: 2018-10-31
+  address_people: MyString
+  email_people: MyString
   gender: one
-  city: one
+  name_people: MyString
+  lastname_people: MyString
   school: one
-  type_users: one
-  password_person: MyString
+  phone_people: MyString
+  city: one
+  type_person: one
+  password_people: MyString
 
 two:
-  code_person: 1
-  name_person: MyString
-  age_person: 2018-10-22
-  address_person: MyString
-  email_person: MyString
+  birthdate_people: 2018-10-31
+  address_people: MyString
+  email_people: MyString
   gender: two
-  city: two
+  name_people: MyString
+  lastname_people: MyString
   school: two
-  type_users: two
-  password_person: MyString
+  phone_people: MyString
+  city: two
+  type_person: two
+  password_people: MyString

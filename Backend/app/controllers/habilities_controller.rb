@@ -69,6 +69,6 @@ class HabilitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hability_params
-      params.require(:hability).permit(:code_hability, :name_hability, :description_hability)
+      params.require(:hability).permit(:name_hability, :description_hability)
     end
 end

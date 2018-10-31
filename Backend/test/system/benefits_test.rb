@@ -14,7 +14,6 @@ class BenefitsTest < ApplicationSystemTestCase
     visit benefits_url
     click_on "New Benefit"
 
-    fill_in "Code Benefit", with: @benefit.code_benefit
     fill_in "Description Benefit", with: @benefit.description_benefit
     fill_in "Name Benefit", with: @benefit.name_benefit
     click_on "Create Benefit"
@@ -27,7 +26,6 @@ class BenefitsTest < ApplicationSystemTestCase
     visit benefits_url
     click_on "Edit", match: :first
 
-    fill_in "Code Benefit", with: @benefit.code_benefit
     fill_in "Description Benefit", with: @benefit.description_benefit
     fill_in "Name Benefit", with: @benefit.name_benefit
     click_on "Update Benefit"

@@ -14,9 +14,8 @@ class NotesTest < ApplicationSystemTestCase
     visit notes_url
     click_on "New Note"
 
-    fill_in "Code Note", with: @note.code_note
     fill_in "Description Note", with: @note.description_note
-    fill_in "Valuenote Note", with: @note.valuenote_note
+    fill_in "Value Note", with: @note.value_note
     click_on "Create Note"
 
     assert_text "Note was successfully created"
@@ -27,9 +26,8 @@ class NotesTest < ApplicationSystemTestCase
     visit notes_url
     click_on "Edit", match: :first
 
-    fill_in "Code Note", with: @note.code_note
     fill_in "Description Note", with: @note.description_note
-    fill_in "Valuenote Note", with: @note.valuenote_note
+    fill_in "Value Note", with: @note.value_note
     click_on "Update Note"
 
     assert_text "Note was successfully updated"

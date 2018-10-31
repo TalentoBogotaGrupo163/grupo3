@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  code_entity: 1
   name_entity: MyString
   address_entity: MyString
   description_entity: MyString
 
 two:
-  code_entity: 1
   name_entity: MyString
   address_entity: MyString
   description_entity: MyString

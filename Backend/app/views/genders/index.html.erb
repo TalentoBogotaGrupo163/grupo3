@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Code gender</th>
       <th>Name gender</th>
       <th colspan="3"></th>
     </tr>
@@ -14,7 +13,6 @@
   <tbody>
     <% @genders.each do |gender| %>
       <tr>
-        <td><%= gender.code_gender %></td>
         <td><%= gender.name_gender %></td>
         <td><%= link_to 'Show', gender %></td>
         <td><%= link_to 'Edit', edit_gender_path(gender) %></td>

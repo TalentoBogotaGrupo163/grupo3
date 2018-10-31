@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  universities: one
   program: one
-  university: one
   description: MyString
 
 two:
+  universities: two
   program: two
-  university: two
   description: MyString

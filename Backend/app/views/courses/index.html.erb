@@ -5,9 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>Code course</th>
       <th>Name course</th>
-      <th>Description course</th>
+      <th>Description benefit</th>
       <th>Url course</th>
       <th colspan="3"></th>
     </tr>
@@ -16,9 +15,8 @@
   <tbody>
     <% @courses.each do |course| %>
       <tr>
-        <td><%= course.code_course %></td>
         <td><%= course.name_course %></td>
-        <td><%= course.description_course %></td>
+        <td><%= course.description_benefit %></td>
         <td><%= course.url_course %></td>
         <td><%= link_to 'Show', course %></td>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>

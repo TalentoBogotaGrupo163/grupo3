@@ -5,13 +5,13 @@
 <table>
   <thead>
     <tr>
-      <th>Code school</th>
-      <th>Name school</th>
       <th>Address school</th>
-      <th>Phone school</th>
       <th>Email school</th>
+      <th>Name school</th>
+      <th>Description school</th>
+      <th>Phone school</th>
       <th>City</th>
-      <th>Typeuser</th>
+      <th>Type person</th>
       <th>Password school</th>
       <th colspan="3"></th>
     </tr>
@@ -20,13 +20,13 @@
   <tbody>
     <% @schools.each do |school| %>
       <tr>
-        <td><%= school.code_school %></td>
-        <td><%= school.name_school %></td>
         <td><%= school.address_school %></td>
-        <td><%= school.phone_school %></td>
         <td><%= school.email_school %></td>
+        <td><%= school.name_school %></td>
+        <td><%= school.description_school %></td>
+        <td><%= school.phone_school %></td>
         <td><%= school.city %></td>
-        <td><%= school.typeuser %></td>
+        <td><%= school.type_person %></td>
         <td><%= school.password_school %></td>
         <td><%= link_to 'Show', school %></td>
         <td><%= link_to 'Edit', edit_school_path(school) %></td>

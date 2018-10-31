@@ -5,16 +5,17 @@
 <table>
   <thead>
     <tr>
-      <th>Code person</th>
-      <th>Name person</th>
-      <th>Age person</th>
-      <th>Address person</th>
-      <th>Email person</th>
+      <th>Birthdate people</th>
+      <th>Address people</th>
+      <th>Email people</th>
       <th>Gender</th>
-      <th>City</th>
+      <th>Name people</th>
+      <th>Lastname people</th>
       <th>School</th>
-      <th>Type users</th>
-      <th>Password person</th>
+      <th>Phone people</th>
+      <th>City</th>
+      <th>Type person</th>
+      <th>Password people</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,16 +23,17 @@
   <tbody>
     <% @people.each do |person| %>
       <tr>
-        <td><%= person.code_person %></td>
-        <td><%= person.name_person %></td>
-        <td><%= person.age_person %></td>
-        <td><%= person.address_person %></td>
-        <td><%= person.email_person %></td>
+        <td><%= person.birthdate_people %></td>
+        <td><%= person.address_people %></td>
+        <td><%= person.email_people %></td>
         <td><%= person.gender %></td>
-        <td><%= person.city %></td>
+        <td><%= person.name_people %></td>
+        <td><%= person.lastname_people %></td>
         <td><%= person.school %></td>
-        <td><%= person.type_users %></td>
-        <td><%= person.password_person %></td>
+        <td><%= person.phone_people %></td>
+        <td><%= person.city %></td>
+        <td><%= person.type_person %></td>
+        <td><%= person.password_people %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
         <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>

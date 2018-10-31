@@ -1,4 +1,4 @@
 class ProgramXUniversity < ApplicationRecord
+  belongs_to :universities
   belongs_to :program
-  belongs_to :university
 end

@@ -14,7 +14,6 @@ class ProgramsTest < ApplicationSystemTestCase
     visit programs_url
     click_on "New Program"
 
-    fill_in "Code Program", with: @program.code_program
     fill_in "Description Program", with: @program.description_program
     fill_in "Name Program", with: @program.name_program
     fill_in "Url Program", with: @program.url_program
@@ -28,7 +27,6 @@ class ProgramsTest < ApplicationSystemTestCase
     visit programs_url
     click_on "Edit", match: :first
 
-    fill_in "Code Program", with: @program.code_program
     fill_in "Description Program", with: @program.description_program
     fill_in "Name Program", with: @program.name_program
     fill_in "Url Program", with: @program.url_program

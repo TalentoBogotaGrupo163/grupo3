@@ -14,16 +14,17 @@ class PeopleTest < ApplicationSystemTestCase
     visit people_url
     click_on "New Person"
 
-    fill_in "Address Person", with: @person.address_person
-    fill_in "Age Person", with: @person.age_person
+    fill_in "Address People", with: @person.address_people
+    fill_in "Birthdate People", with: @person.birthdate_people
     fill_in "City", with: @person.city_id
-    fill_in "Code Person", with: @person.code_person
-    fill_in "Email Person", with: @person.email_person
+    fill_in "Email People", with: @person.email_people
     fill_in "Gender", with: @person.gender_id
-    fill_in "Name Person", with: @person.name_person
-    fill_in "Password Person", with: @person.password_person
+    fill_in "Lastname People", with: @person.lastname_people
+    fill_in "Name People", with: @person.name_people
+    fill_in "Password People", with: @person.password_people
+    fill_in "Phone People", with: @person.phone_people
     fill_in "School", with: @person.school_id
-    fill_in "Type Users", with: @person.type_users_id
+    fill_in "Type Person", with: @person.type_person_id
     click_on "Create Person"
 
     assert_text "Person was successfully created"
@@ -34,16 +35,17 @@ class PeopleTest < ApplicationSystemTestCase
     visit people_url
     click_on "Edit", match: :first
 
-    fill_in "Address Person", with: @person.address_person
-    fill_in "Age Person", with: @person.age_person
+    fill_in "Address People", with: @person.address_people
+    fill_in "Birthdate People", with: @person.birthdate_people
     fill_in "City", with: @person.city_id
-    fill_in "Code Person", with: @person.code_person
-    fill_in "Email Person", with: @person.email_person
+    fill_in "Email People", with: @person.email_people
     fill_in "Gender", with: @person.gender_id
-    fill_in "Name Person", with: @person.name_person
-    fill_in "Password Person", with: @person.password_person
+    fill_in "Lastname People", with: @person.lastname_people
+    fill_in "Name People", with: @person.name_people
+    fill_in "Password People", with: @person.password_people
+    fill_in "Phone People", with: @person.phone_people
     fill_in "School", with: @person.school_id
-    fill_in "Type Users", with: @person.type_users_id
+    fill_in "Type Person", with: @person.type_person_id
     click_on "Update Person"
 
     assert_text "Person was successfully updated"

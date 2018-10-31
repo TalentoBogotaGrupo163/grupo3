@@ -16,7 +16,7 @@ class ProgramXUniversitiesTest < ApplicationSystemTestCase
 
     fill_in "Description", with: @program_x_university.description
     fill_in "Program", with: @program_x_university.program_id
-    fill_in "University", with: @program_x_university.university_id
+    fill_in "Universities", with: @program_x_university.universities_id
     click_on "Create Program x university"
 
     assert_text "Program x university was successfully created"
@@ -29,7 +29,7 @@ class ProgramXUniversitiesTest < ApplicationSystemTestCase
 
     fill_in "Description", with: @program_x_university.description
     fill_in "Program", with: @program_x_university.program_id
-    fill_in "University", with: @program_x_university.university_id
+    fill_in "Universities", with: @program_x_university.universities_id
     click_on "Update Program x university"
 
     assert_text "Program x university was successfully updated"

@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Code subject</th>
       <th>Name subject</th>
       <th>Description subject</th>
       <th colspan="3"></th>
@@ -15,7 +14,6 @@
   <tbody>
     <% @subjects.each do |subject| %>
       <tr>
-        <td><%= subject.code_subject %></td>
         <td><%= subject.name_subject %></td>
         <td><%= subject.description_subject %></td>
         <td><%= link_to 'Show', subject %></td>

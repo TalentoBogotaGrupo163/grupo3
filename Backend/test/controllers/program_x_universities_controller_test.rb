@@ -17,7 +17,7 @@ class ProgramXUniversitiesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create program_x_university" do
     assert_difference('ProgramXUniversity.count') do
-      post program_x_universities_url, params: { program_x_university: { description: @program_x_university.description, program_id: @program_x_university.program_id, university_id: @program_x_university.university_id } }
+      post program_x_universities_url, params: { program_x_university: { description: @program_x_university.description, program_id: @program_x_university.program_id, universities_id: @program_x_university.universities_id } }
     end
 
     assert_redirected_to program_x_university_url(ProgramXUniversity.last)
@@ -34,7 +34,7 @@ class ProgramXUniversitiesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update program_x_university" do
-    patch program_x_university_url(@program_x_university), params: { program_x_university: { description: @program_x_university.description, program_id: @program_x_university.program_id, university_id: @program_x_university.university_id } }
+    patch program_x_university_url(@program_x_university), params: { program_x_university: { description: @program_x_university.description, program_id: @program_x_university.program_id, universities_id: @program_x_university.universities_id } }
     assert_redirected_to program_x_university_url(@program_x_university)
   end
 

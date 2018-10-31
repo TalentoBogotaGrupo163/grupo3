@@ -14,7 +14,6 @@ class GendersTest < ApplicationSystemTestCase
     visit genders_url
     click_on "New Gender"
 
-    fill_in "Code Gender", with: @gender.code_gender
     fill_in "Name Gender", with: @gender.name_gender
     click_on "Create Gender"
 
@@ -26,7 +25,6 @@ class GendersTest < ApplicationSystemTestCase
     visit genders_url
     click_on "Edit", match: :first
 
-    fill_in "Code Gender", with: @gender.code_gender
     fill_in "Name Gender", with: @gender.name_gender
     click_on "Update Gender"
 
